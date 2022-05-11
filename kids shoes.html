@@ -1,0 +1,458 @@
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/master.css"> 
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>FA STORES</title>
+    </head>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  .navigation{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding:1% 1%;
+    margin-left: 0%;
+    align-items: center;
+    width:100%;
+    background-color: rgba(2, 168, 168, 0.925);
+    border:1px solid rgba(255, 255, 255, 0.068);;
+    z-index: 10;font-size: x-large;}
+    .dropbtn {
+        color: rgba(255, 255, 255, 0.534);
+        padding: 16px;
+        font-weight: 500;
+        border: none;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1ee;
+        min-width: 400px;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 10px 10px;
+        text-decoration:none;
+        display: block;
+        font-size: medium;
+      }
+      .dropdown-content h1{
+        padding: 10px 10px;
+          font-size:small;
+      }
+      .dropdown-content img{
+        padding: 10px 10px;
+        width: 300px;
+        height: 350px;
+        float: right;
+      }
+      .dropbtn:hover {color: #f031d0;}
+      .dropdown-content a:hover {color: rgb(100, 93, 93);}
+      .dropdown:hover .dropdown-content {display: block;}
+      /* The reason for goes down  */
+      .dropdown:hover .dropbtn {color: #f031d0;}
+  .logo{
+    font-size:50px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 100
+  }
+  /**/
+  .right{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    margin-left:80px ;
+  }
+  .right a i{
+    color:rgb(255, 255, 255);
+  }
+  .right a:hover i{
+    color: #f031d0;
+  }
+
+.feature-produc{
+    display: flex;
+    margin: 40pc 10px;
+    margin-bottom: 0%;
+}
+.feature-product-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 60px auto;
+    width: 1000px;
+    padding: 20px 20px;
+    background-color: #d6d6d60e;
+    margin-top: -40%;}
+.feature-product-box{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 20px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    margin-left: 10%;
+}
+ 
+.product-feature-img{
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    position: relative;
+}
+.product-feature-img img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+.product-feature-img .img1{
+   opacity: 0; position: absolute;
+}
+
+.product-feature-img .img1:hover{
+opacity: 1;
+}
+
+
+.product-feature-text-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.product-feature-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.product-feature-text strong{
+    color: #272722;
+    font-weight: 600;
+    line-height: 20px;
+}
+.product-feature-text span{
+    color: #747474;
+}
+.cart-like{
+ display: flex;   
+}
+.cart-like a{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #747474;
+    margin: 0px 3px;
+    font-size: 0.9rem;
+}
+.cart-like a i{
+    color: #2c2c2c;
+}
+.cart-like a:hover{
+    background-color: #f031d0;
+}
+.cart-like a:hover i{
+   color: #f8f8f8;
+}
+footer{
+    background-color:rgba(2, 168, 168, 0.925) ;
+    padding: 60px 10px;
+    position: relative;
+    margin-top: 20px;
+    border-top: 1px solid rgb(238, 228, 228);
+}
+
+.cont{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 85%;
+  margin: 10px auto;
+}
+.end-logo{
+  color: rgb(255, 254, 254);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  letter-spacing: 1px;
+}
+.end-logo .span{
+  color: #ffffff;
+  font-weight: 400;
+  margin: 10px;
+  font-size: 0.8rem;
+}
+.end-net{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.end-net a{
+  margin: 0px 6px;
+  border-radius: 50%;
+  /* to be circle*/
+  color: black;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.062);
+  width:30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.end-net a:hover{
+  background-color: rgb(226, 43, 211);
+  color: #ffffff;
+  transition: all ease 0.3s;
+}
+.endlist{
+  display:block;
+  font-size: x-large;
+}
+.top{
+  font-size: x-large;
+  color: #ffffff;
+}
+.endlist li a{
+  color: rgba(26, 24, 24, 0.534);
+  padding:5px 20px;
+  margin:5px ;
+  font-weight: 500;}
+
+.endlist li a:hover, a:active {
+  color:rgb(250, 95, 237);
+}
+    </style>
+
+</head>
+<body>
+    <div class="navigation">
+        <a href="#" class="logo">logo</a>
+        <a href="#" class="dropbtn">home</a>
+        <div class="dropdown">
+          <a href="#" class="dropbtn">woman</a>
+          <div class="dropdown-content">
+         <imgsrc="https://i.pinimg.com/564x/66/18/ce/6618ce9b8102ed62dc6f611c7d69c474.jpg">
+            <h1>All Products</h1>
+            <a href="#">dress</a>
+            <a href="#">formal</a>
+            <a href="#">shos</a>
+            <a href="#">tops</a>
+            <a href="#">jens</a>
+            <a href="#">bags</a>
+            <a href="#">home clothes</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="dropbtn">man</a>
+          <div class="dropdown-content">
+            <h1>All Products</h1>
+            <a href="#">T-shirts</a>
+            <a href="#">Pantlon</a>
+            <a href="#">shoes</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <a href="#" class="dropbtn">kids</a>
+          <div class="dropdown-content">
+            <h1>All Products</h1>
+            <a href="#">T-shirts</a>
+            <a href="#">Pantlon</a>
+            <a href="#">shoes</a>
+          </div>
+        </div> 
+        <div class="right"> 
+            <a href="#"><i class="fa fa-fw fa-home"></i> </a> 
+            <a href="#"><i class="fa fa-fw fa-search"></i></a> 
+            <a href="#"><i class="fa fa-fw fa-shopping-bag"></i> </a> 
+            <a href="#"><i class="fa fa-fw fa-user"></i> </a>
+        </div>
+    </div>
+    <section class="feature-produc"> 
+        <div class="feature-product-container">
+            <div class="feature-product-box">
+              <a href="k4.html"><div class="product-feature-img">
+                  <img  src="project22.jpg">
+                  <img class="img1" src="project22a.jpg">
+               </div></a>
+               <div class="product-feature-text-container">
+                  <div class="product-feature-text">
+                       <strong>NMD_R1 Shoes </strong>
+                       <span>1954.00 EGP</span>
+                   </div>
+                   <div class="cart-like">
+                       <a href="#"><i class="fa fa-fw fa-shopping-cart"></i></a>
+                       <a href="#"><i class="fa fa-fw fa-heart"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-product-box">
+             <a href="k6.html"> <div class="product-feature-img">
+                  <img  src="k6.jpeg">
+                  <img class="img1" src="k6c.jpeg">
+                </div></a>
+              <div class="product-feature-text-container">
+                 <div class="product-feature-text">
+                      <strong>STAN SMITH SHOES</strong>
+                      <span>1749.00 EGP</span>
+                  </div> 
+                  <div class="cart-like">
+                      <a href="#"><i class="fa fa-fw fa-shopping-cart"></i></a>
+                      <a href="#"><i class="fa fa-fw fa-heart"></i></a>
+                   </div>
+               </div>
+           </div>
+        </div>
+  
+  
+  
+        <div class="feature-product-container">
+          <div class="feature-product-box">
+            <a href="k1.html"> <div class="product-feature-img">
+                <img  src="projecte.jpg">
+                <img class="img1" src="projecte1.jpg">
+             </div></a>
+             <div class="product-feature-text-container">
+                 <div class="product-feature-text">
+                     <strong>SPEEDFLOW TURF BOOTS</strong>
+                     <span>1879.00 EGP</span>
+                 </div>
+                 <div class="cart-like">
+                     <a href="#"><i class="fa fa-fw fa-shopping-cart"></i></a>
+                     <a href="#"><i class="fa fa-fw fa-heart"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="feature-product-box">
+            <a href="k5.html"> <div class="product-feature-img">
+                <img  src="k5.jpeg">
+                <img class="img1" src="k5c.jpeg">
+            </div></a>
+            <div class="product-feature-text-container">
+               <div class="product-feature-text">
+                    <strong>SUPER STAR 360 SHOES</strong>
+                    <span>850.00EGP</span>
+                </div>
+                <div class="cart-like">
+                    <a href="#"><i class="fa fa-fw fa-shopping-cart"></i></a>
+                    <a href="#"><i class="fa fa-fw fa-heart"></i></a>
+                 </div>
+             </div>
+         </div>
+       </div>
+
+
+
+
+
+
+       <div class="feature-product-container">
+        <div class="feature-product-box">
+          <a href="k3.html"> <div class="product-feature-img">
+              <img  src="xx.jpg">
+              <img class="img1" src="xx1.jpg">
+           </div> </a>
+           <div class="product-feature-text-container">
+               <div class="product-feature-text">
+                   <strong>DISNEY FROZEN SHOES</strong>
+                   <span>1129.00 EGP</span>
+               </div>
+               <div class="cart-like">
+                   <a href="#"><i class="fa fa-fw fa-shopping-cart"></i></a>
+                   <a href="#"><i class="fa fa-fw fa-heart"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="feature-product-box">
+          <a href="k2.html"><div class="product-feature-img">
+              <img  src="k2.jpeg">
+              <img class="img1" src="k2a.jpeg">
+          </div></a>
+          <div class="product-feature-text-container">
+              <div class="product-feature-text">
+                  <strong>VS SWITCH SHOES</strong>
+                  <span>1374.00 EGP</span>
+              </div>
+              <div class="cart-like">
+                  <a href="#"><i class="fa fa-fw fa-shopping-cart"></i></a>
+                  <a href="#"><i class="fa fa-fw fa-heart"></i></a>
+               </div>
+           </div>
+       </div>
+     </div>
+    </section>
+    <footer class="footer2">
+        <div class="cont">
+           <div class="log-con">
+                <div class="end-logo">logo</div>
+                <span> Copyright;2022 All Right Reserved To logoTeam</span>
+                <div class="end-net">
+                   <a href="#"><i class="fa fa-fw fa-linkedin"></i></a>
+                   <a href="#"><i class="fa fa-fw fa-facebook-f"></i></a>
+                   <a href="#"><i class="fa fa-fw fa-instagram"></i></a>
+                   <a href="#"><i class="fa fa-fw fa-twitter"></i></a>
+                </div>
+            </div > 
+            <div >
+                <strong class="top">TOP CATEGORIES</strong><br>
+                  <ul class="endlist" >
+                  <li><a href="#">home</a></li>
+                  <li><a href="#">woman</a></li>
+                  <li><a href="#">man</a></li>
+                  <li><a href="#">kids</a></li>
+                  <li><a href="#">baby</a></li>
+              </ul>
+            </div>
+            <div >
+              <strong class="top">BOHEMIAN TRADERS</strong><br>
+                <ul class="endlist" >
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Terms & Privacy Policy</a></li>
+                <li><a href="#"> Inclusive Size Range</a></li>
+                <li><a href="#"> Shipping & Returns</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+            </ul>
+          </div>
+           </div>
+       </footer>
+
+</body>
+</html>
