@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/master.css"> 
+  <link rel="shortcut icon" href="icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>shopping</title>
+  </head>
+  <style>
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+    .container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  margin-top: -30%;
+  left: 185%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #009c77;
+  color: black;
+  font-size: 28px;
+  padding: 1cm 1.5cm;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  text-align: center;
+  inline-size: 8cm; 
+}
+
+.container .btn:hover {
+  background-color: black;
+  color: white;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.navigation{
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0%;
+  align-items: center;
+  width:100%;
+  background-color: rgba(2, 168, 168, 0.925);
+  border:1px solid rgba(255, 255, 255, 0.068);;
+  z-index: 10;font-size: x-large;}
+  .dropbtn {
+      color: rgba(255, 255, 255, 0.534);
+      padding: 16px;
+      font-weight: 500;
+      border: none;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1ee;
+      min-width: 400px;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 10px 10px;
+      text-decoration:none;
+      display: block;
+      font-size: medium;
+    }
+    .dropdown-content h1{
+      padding: 10px 10px;
+        font-size:small;
+    }
+    .dropdown-content img{
+      padding: 10px 10px;
+      width: 300px;
+      height: 350px;
+      float: right;
+    }
+    .dropbtn:hover {color: #f031d0;}
+    .dropdown-content a:hover {color: rgb(100, 93, 93);}
+    .dropdown:hover .dropdown-content {display: block;}
+    /* The reason for goes down  */
+    .dropdown:hover .dropbtn {color: #f031d0;}
+.logo{
+  font-size:50px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 100;
+  margin-bottom: -100;
+}
+/**/
+.right{
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  margin-left:80px ;
+}
+.right a i{
+  color:rgb(255, 255, 255);
+}
+.right a:hover i{
+  color:rgb(255, 81, 232);
+}
+footer{
+    background-color:rgba(2, 168, 168, 0.925) ;
+    padding: 60px 10px;
+    position: relative;
+    margin-top: 20px;
+    border-top: 1px solid rgb(238, 228, 228);
+}
+
+.cont{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 85%;
+  margin: 10px auto;
+}
+.end-logo{
+  color: rgb(255, 254, 254);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  letter-spacing: 1px;
+}
+.end-logo .span{
+  color: #ffffff;
+  font-weight: 400;
+  margin: 10px;
+  font-size: 0.8rem;
+}
+.end-net{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.end-net a{
+  margin: 0px 6px;
+  border-radius: 50%;
+  /* to be circle*/
+  color: black;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.062);
+  width:30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.end-net a:hover{
+  background-color: rgb(226, 43, 211);
+  color: #ffffff;
+  transition: all ease 0.3s;
+}
+.endlist{
+  display:block;
+  font-size: x-large;
+}
+body{background-color: orange;}
+#demo{
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border: 1px solid rgba(2, 168, 168, 0.925);  
+}
+#demo:hover{
+border: 1px solid rgba(248, 18, 237, 0.925);}
+ </style>
+
+    
+     <body>    
+      <div class="navigation">
+        <a href="index0.html" class="logo">logo</a>
+        <a href="index0.html" class="dropbtn">home</a>
+        <div class="dropdown">
+          <a href="index2.html" class="dropbtn">woman</a>
+          <div class="dropdown-content">
+           <img src="https://i.pinimg.com/564x/66/18/ce/6618ce9b8102ed62dc6f611c7d69c474.jpg">
+            <h1>All Products</h1>
+            <a href="">shoes</a>
+            <a href="HTML women T-SHIRTS MAIN PAGE.html">tops</a>
+            <a href="index4.html">jeans</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="home.html" class="dropbtn">man</a>
+          <div class="dropdown-content">
+            <h1>All Products</h1>
+            <a href="file:///C:/Users/fadih/Downloads/shopping_store/HTML%20T-SHIRTS%20MAIN%20PAGE.html">t-shirt</a>
+            <a href="index3.html">pantallon</a>
+            <a href="#">shoes</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <a href="#" class="dropbtn">kids</a>
+          <div class="dropdown-content">
+            <h1>All Products</h1>
+            <a href="HTML Kids T-Shirts Main Page.html">t-shirt</a>
+            <a href="index5.html">pantallon</a>
+            <a href="#">shoes</a>
+          </div>
+        </div> 
+       <div class="right"> 
+            <a href="#"><i class="fa fa-fw fa-home"></i> </a> 
+            <div class="dropdown2">
+            <a href="#"class="dropbtn2"><i class="fa fa-fw fa-user"></i> </a>
+            <div class="dropdown-content2">
+              <a href="signup.html">sign up</a>
+              <a href="signin.html">sign in</a>
+            </div>
+          </div>
+          <a href="#"><i class="fa fa-fw fa-search"onclick="myFunction()"></i></a> 
+          <a href="#"><i class="fa fa-fw fa-shopping-bag"></i> </a>
+        </div>
+    </div> 
+    <input type="text" placeholder="Search.."id="demo" style="display:none">
+    <div class="container">
+        <img src="project1.jpg"  style="width: 400%";>
+       <a href="HTML T-SHIRTS MAIN PAGE.html" > <button class="btn">shop T-shirts </button></a>
+      </div>
+      <div class="container">
+        <img src="project6.jpg"  style="width:400%";>
+        <a href="index3.html" > <button class="btn">shop jeans</button></a>
+      </div>
+      
+    <div class="gallery">
+        <a target="_blank" href="project2.jpg">
+          <img src="project2.jpg" width="800" height="500" >
+        </a>
+        <div class="desc">AE CLASSIC FIT OXFORD BUTTON-UP SHIRT<br></br><del>EGP 850.00</del> 
+            EGP 510.00
+           </div>
+           </div>
+           
+               
+            
+      
+      
+      <div class="gallery">
+        <a target="_blank" href="project3.jpg">
+          <img src="project3.jpg" alt="T-shirts" width="800" height="500">
+        </a>
+        <div class="desc">AE POLO T-shirts <br></br><del>EGP 550.00</del>
+        EGP 350.00</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="project4.jpg">
+          <img src="project4.jpg" alt="T-shirts" width="800" height="500">
+        </a>
+        <div class="desc">AE GRAPHIC T-SHIRT<br></br><del>EGP 550.00</del>
+            EGP 350.00</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="project5.jpg">
+          <img src="project5.jpg" alt="T-shirts" width="800" height="500">
+        </a>
+        <div class="desc">AE GRAPHIC T-SHIRT<br></br><del>EGP 550.00</del>
+            EGP 350.00</div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="projectj.jpg">
+          <img src="projectd.jpg" alt="shoes" width="800" height="500">
+        </a>
+        <div class="desc"><b>white high sneakers</b><br></br><br></br><del>EGP 1500.00</del>
+        EGP 850.00</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="projecty.jpg">
+          <img src="projecty.jpg" alt="shoes" width="800" height="500">
+        </a>
+        <div class="desc"><b>white sneakers</b><br></br><br></br><del>EGP 950.00</del>
+            EGP 750.00</div>
+      </div>
+    
+      <div class="gallery">
+        <a target="_blank" href="projectz.jpg">
+          <img src="projectz.jpg" alt="shoes" width="800" height="500">
+        </a>
+        <div class="desc"><b>sneakers</b><br></br><br></br><del>EGP 1250.00</del>
+            EGP 850.00</div>
+      </div>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>  
+    <h1 style="font-size: 40px;">MEN`S TOPS</h1>
+    <P style="font-size: 20px;">From work to evenings out, our edit of men’s tops covers all bases. Shop classic crisp white shirts, sporty polo shirts, printed tees, hoodies and sweatshirts - your options are endless at American Eagle. Whatever your style, we’ve got the top for it.
+
+        From casual Sundays to the perfect weekend fits, our selection of iconic men’s polo shirts knows no limits when it comes to versatility. If you need a style that will complete your smart casual wardrobe, this is it. Our polo shirts come in a range of colors and patterns to suit your mood. Add an edge to your off-duty look with a crisp button-up oxford shirt, or if you’re feeling daring go for a floral print or colour – think baby blue and yellow.
+        
+        T-shirts are the ultimate wardrobe essential - simple and versatile, styling a t-shirt couldn’t be easier at American Eagle online. Check out our edit for a range of cuts, fabrics and prints fit for any occasion. From the gym to the office we got you covered.</P>
+        <h2 style="font-size: 40px;">MEN`S BOTTOMS</h2>
+        <p style="font-size: 20px;">For work, weekends and everything in between our edit of men’s bottoms will have you covered for any occasion. Shopping for the perfect pair can be tricky – we know the struggle. At American Eagle, our wide array of sleek styles makes it easy. Shop jeans, joggers, pants and shorts for styles that suit all tastes.
+
+            Take a day off from denim and joggers and upgrade your wardrobe with a pair of pants. This versatile wardrobe staple will take you from the office to an evening out with friends. Our edit has a selection of styles from chinos and slim joggers. Looking for an updated version of your typical sweatpants? Our joggers will keep your outfit smart yet casual in slim and tapered styles. Dressing up? Browse our range of chinos in an array of colors and fits to take you through the week, no matter the event.
+            
+            Keep your look fresh with our collection of men’s shorts. You can’t go wrong with a pair of cargo shorts, a versatile staple that can be styled any way. Or try a pair of denim shorts if you’re after something stylish yet practical.
+            
+            For the ultimate style savior, check out our renowned edit of men’s jeans. With an array of fits and fabrics to choose from, you won’t be disappointed. Shop our classic jeans in skinny, slim, straight and relaxed fits to suit any occasions </p>
+      <h3 style="font-size: 40px;">Men's Accessories & Underwear</h3>
+      <p style="font-size: 20px;">Shop everyday essentials from our selection of men’s underwear. When it comes to choosing underwear, comfort is key. Our collection contains a variety of fits, colors and patterns. Whether you’re looking for boxers, trunks or briefs you’ll be sure to find your fit at American Eagle.
+
+        Put the finishing touch on your outfits with some men’s accessories. Complete your ensemble with our edit of hats. Shop bucket hats and baseball caps and choose from block colors to cool prints for a summer-ready look.
+        
+        Once your basics are covered, putting an outfit together couldn’t be easier. Shop American Eagle’s socks for comfort and durability. If you want the focus to be on your shoes, grab a pair of our invisible socks in neutral shades for a refined look.
+        
+         </p>
+         <footer class="footer2">
+            <div class="cont">
+               <div class="log-con">
+                    <div class="end-logo">logo</div>
+                    <span> Copyright;2022 All Right Reserved To logoTeam</span>
+                    <div class="end-net">
+                       <a href="#"><i class="fa fa-fw fa-linkedin"></i></a>
+                       <a href="#"><i class="fa fa-fw fa-facebook-f"></i></a>
+                       <a href="#"><i class="fa fa-fw fa-instagram"></i></a>
+                       <a href="#"><i class="fa fa-fw fa-twitter"></i></a>
+                    </div>
+                </div > 
+                <div >
+                    <strong class="top">TOP CATEGORIES</strong><br>
+                      <ul class="endlist" >
+                      <li><a href="#">home</a></li>
+                      <li><a href="#">woman</a></li>
+                      <li><a href="#">man</a></li>
+                      <li><a href="#">kids</a></li>
+                  </ul>
+                </div>
+                <div >
+                  <strong class="top">BOHEMIAN TRADERS</strong><br>
+                    <ul class="endlist" >
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Terms & Privacy Policy</a></li>
+                    <li><a href="#"> Inclusive Size Range</a></li>
+                    <li><a href="#"> Shipping & Returns</a></li>
+                </ul>
+              </div>
+               </div>
+           </footer>
+         
+</body>      
+</html>
