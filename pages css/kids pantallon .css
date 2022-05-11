@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  *{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+
+
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  padding-top: 130px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: cornsilk;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.navigation{
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding:1% 1%;
+  margin-left: 0%;
+  align-items: center;
+  width:100%;
+  height: 100;
+  background-color: rgba(2, 168, 168, 0.925);
+  border:1px solid rgba(255, 255, 255, 0.068);;
+  z-index: 10;font-size: x-large;
+  right: 0.1px;
+}
+  .dropbtn {
+      color: rgba(255, 255, 255, 0.534);
+      padding: 16px;
+      font-weight: 500;
+      border: none;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1ee;
+      min-width: 400px;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 10px 10px;
+      text-decoration:none;
+      display: block;
+      font-size: medium;
+    }
+    .dropdown-content h1{
+      padding: 10px 10px;
+        font-size:small;
+    }
+    .dropdown-content img{
+      padding: 10px 10px;
+      width: 300px;
+      height: 350px;
+      float: right;
+    }
+    .dropbtn:hover {color: #f031d0;}
+    .dropdown-content a:hover {color: rgb(100, 93, 93);}
+    .dropdown:hover .dropdown-content {display: block;}
+    /* The reason for goes down  */
+    .dropdown:hover .dropbtn {color: #f031d0;}
+.logo{
+  font-size:50px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 100;
+  margin-bottom: -100;
+}
+/**/
+.right{
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  margin-left:80px ;
+}
+.right a i{
+  color:rgb(255, 255, 255);
+}
+.right a:hover i{
+  color:rgb(255, 81, 232);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: auto;
+}
+
+.card {
+  background-color: cornsilk;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card .icon {
+  color: #3a6cf4;
+  font-size: 8em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3{
+  color: #3a6cf4;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+
+.jeans .content{
+  margin-top: 30px;
+}
+.jeans-men .content{
+  margin-top: 30px;
+}
+
+.jeans-card {
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 20em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+
+.jeans-card:hover {
+ transform: scale(1.1);
+}
+
+.jeans-card:hover .project-image {
+  opacity: 0.9;
+}
+
+.jeans-image:hover .img-1{
+    display: inline;
+}
+.jeans-image .img-1{
+  display: none;  
+  position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transition : 0.7s ease;
+
+}  
+.jeans-image img{
+  width: 100%
+}
+
+.jeans-info {
+  padding: 1em;
+}
+.rating{
+  color: rgba(2, 168, 168, 0.925);
+  
+
+}
+
+
+.jeans-category {
+  font-size: 0.8em;
+}
+
+.jeans-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+h5 a{
+  text-decoration: none;
+  color: #070707;
+}
+
+h5 a:hover {
+  color: #ca25af;
+}
+.btn {
+  border-radius: 12px;
+  background-color: rgb(2, 168, 168, 0.925);
+}
+
+.gender{
+  position: absolute;
+  display: block;
+}
+footer{
+  background-color:rgba(2, 168, 168, 0.925) ;
+  padding: 60px 10px;
+  position: relative;
+  margin-top: 20px;
+  border-top: 1px solid rgb(238, 228, 228);
+}
+
+.cont{
+display:flex;
+justify-content:space-between;
+align-items: center;
+width: 85%;
+margin: 10px auto;
+}
+.end-logo{
+color: rgb(255, 254, 254);
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 90px;
+letter-spacing: 1px;
+}
+.end-logo .span{
+color: #ffffff;
+font-weight: 400;
+margin: 10px;
+font-size: 0.8rem;
+}
+.end-net{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.end-net a{
+margin: 0px 6px;
+border-radius: 50%;
+/* to be circle*/
+color: black;
+background-color: #ffffff;
+border: 1px solid rgba(0, 0, 0, 0.062);
+width:30px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.end-net a:hover{
+background-color: rgb(226, 43, 211);
+color: #ffffff;
+transition: all ease 0.3s;
+}
+.endlist{
+display:block;
+font-size: x-large;
+}
+.top{
+font-size: x-large;
+color: #ffffff;
+}
+.endlist li a{
+color: rgba(26, 24, 24, 0.534);
+padding:5px 20px;
+margin:5px ;
+font-weight: 500;}
+
+.endlist li a:hover, a:active {
+color:rgb(250, 95, 237);
+}
+.text{
+  text-align: center;
+  font-weight: 200;
+  font-size: larger;
+  padding-top: 30px;
+}
